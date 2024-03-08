@@ -6,7 +6,7 @@
     --background-color-two: #fff;
     --font-color-one: #f0ebeb;
     --font-color-two: #1c1a1a;
-    --header-background: #000058;
+    --header-background: #01030a;
     --footer-background: #fbfbfb;
     --background-mask: #0000004d;
     --action-button-color: #000058;
@@ -54,9 +54,22 @@ header {
     height: 60px;
     display: flex;
     justify-content: space-between;
-    background-color: #555;
+    background-color: var(--header-background);
     
 }
+
+header a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--font-color-one);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
 .logo-text {
     padding-top: 20px;
