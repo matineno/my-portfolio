@@ -12,7 +12,8 @@
     --section-button-border-color: #1c1a1a8e;
     --footer-background: #fbfbfb;
     --background-mask: #00000081;
-    --action-button-color: #ffffff00;
+    --action-button-color-one: #ffffff00;
+    --action-button-color-two: #01030a;
     --profile-border-color: #fff;
     --shadow: -16px 13px 19px -3px #0000001f;
 }
@@ -162,7 +163,7 @@ nav {
 }
 
 .button {
-    background-color: var(--action-button-color);
+    background-color: var(--action-button-color-one);
     height: 50px;
     width: 200px;
     text-align: center;
@@ -180,6 +181,9 @@ section, section {
 
 .content-section {
     color: var(--font-color-two);
+    p {
+        margin: 15px 0px;
+    }
 }
 
 .profile-image-container {
@@ -199,16 +203,117 @@ section, section {
 }
 
 .section-button { 
-    background-color: var(--action-button-color);
+    background-color: var(--action-button-color-two);
     height: 50px;
     width: 200px;
     text-align: center;
     border: 2px solid var(--section-button-border-color);
-    border-radius: 40px;
+    border-radius: 5px;
     p {
+        color: var(--font-color-one);
         margin-top: 10px;
         -webkit-text-stroke-width: 0.5px;
     }
 }
+
+article, aside {
+    padding: 10px 20px;
+    background-color: var(--background-color-one);
+    border-radius: 10px;
+}
+
+article {
+    min-width: calc(40% - 10px);
+    height: 100%;
+}
+
+aside {
+    min-width: calc(60% - 10px);
+    height: 100%;
+}
+
+input {
+  width: calc(100%);
+  margin-top: 15px;
+  border: 1px solid rgb(234, 232, 232);
+  border-radius: 5px;
+  padding: 0 20px;
+  height: 40px;
+  font-size: 18px;
+  background-color: var(--background-color-one);
+  transition: all ease-in-out 0.2s;
+
+  &:focus {
+    background-color: #fff;
+  }
+}
+
+input[type=submit]{
+  background-color: var(--action-button-color-two);
+  color: #fff;
+ 
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+input[type=reset]{
+  background-color: var(--background-color-two);
+  color: var(--action-button-color);
+  margin-top: 9px;
+  border: 1px solid var(--action-button-color);
+
+  &:hover{
+    background-color: #00005810;
+  }
+}
+
+.form-box {
+  width: calc(50% - 5px);
+}
+
+.message {
+  height: 150px;
+  border-radius: 5px;
+  overflow: auto;
+  line-height: 18px;
+  width: calc(100%);
+  margin-top: 15px;
+  border: 1px solid rgb(234, 232, 232);
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: var(--background-color-one);
+  color: #777777;
+  transition: all ease-in-out 0.2s;
+  resize: none;
+
+  &:focus {
+    background-color: #fff;
+    color: #000;
+  }
+
+  &:hover {
+    border: 1px solid var(--background-color-one);
+  }
+}
+
+@media (max-width: 800px) {
+
+  .content {
+    display: block;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  aside h2 {
+    font-size: 24px;
+  }
+}
+
+
+
 
 
