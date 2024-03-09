@@ -169,7 +169,11 @@ nav {
     text-align: center;
     border: 2px solid var(--hero-button-border-color);
     border-radius: 40px;
+    a {
+        text-decoration: none;
+    }
     p {
+        color: var(--font-color-one);
         margin-top: 10px;
         -webkit-text-stroke-width: 0.5px;
     }
@@ -212,6 +216,9 @@ section, section {
     text-align: center;
     border: 2px solid var(--section-button-border-color);
     border-radius: 5px;
+    a {
+        text-decoration: none;
+    }
     p {
         color: var(--font-color-one);
         margin-top: 10px;
