@@ -93,7 +93,7 @@ header a {
     &:hover {
       text-decoration: underline;
     }
-  }
+}
 
 .logo-container {
     padding-top: 10px;
@@ -173,6 +173,9 @@ nav {
         margin-top: 10px;
         -webkit-text-stroke-width: 0.5px;
     }
+    &:hover{
+        opacity: 0.8;
+    }
 }
 
 section, section {
@@ -214,6 +217,9 @@ section, section {
         margin-top: 10px;
         -webkit-text-stroke-width: 0.5px;
     }
+    &:hover{
+        opacity: 0.8;
+    }
 }
 
 article, aside {
@@ -227,11 +233,6 @@ article {
     height: 100%;
 }
 
-label {
-    text-align: left !important;
-    justify-content: left;
-    margin: 0px 0px;
-}
 
 input {
   width: calc(100%);
@@ -283,6 +284,32 @@ input[type=submit]{
   &:hover {
     border: 1px solid var(--background-color-one);
   }
+}
+
+footer {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--header-background);
+    
+}
+
+footer a {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--font-color-one);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s ease-in-out;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+}
+
+footer p {
+    margin-top: 20px;
 }
 
 @media (max-width: 800px) {
