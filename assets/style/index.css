@@ -112,11 +112,17 @@ nav {
 }
 
 .secondary-hero-text {
-    color: var(--font-color-one);
-    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
     z-index: 2;
-}
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--font-color-one);
 
-section h1, h2 {
-    margin: 15px 10px 10px 10px;
+    div h1,h2{
+        text-align: center;
+    }
 }
