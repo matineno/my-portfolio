@@ -227,9 +227,10 @@ article {
     height: 100%;
 }
 
-aside {
-    min-width: calc(60% - 10px);
-    height: 100%;
+label {
+    text-align: left !important;
+    justify-content: left;
+    margin: 0px 0px;
 }
 
 input {
@@ -249,27 +250,14 @@ input {
 }
 
 input[type=submit]{
-  background-color: var(--action-button-color-two);
-  color: #fff;
+    height: 50px;
+    width: 200px;
+    background-color: var(--action-button-color-two);
+    color: #fff;
  
-  &:hover{
-    opacity: 0.8;
-  }
-}
-
-input[type=reset]{
-  background-color: var(--background-color-two);
-  color: var(--action-button-color);
-  margin-top: 9px;
-  border: 1px solid var(--action-button-color);
-
-  &:hover{
-    background-color: #00005810;
-  }
-}
-
-.form-box {
-  width: calc(50% - 5px);
+    &:hover{
+        opacity: 0.8;
+    }
 }
 
 .message {
