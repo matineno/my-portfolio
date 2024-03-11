@@ -159,8 +159,30 @@ nav {
   
     &:hover {
       text-decoration: none;
+      -webkit-animation: bounce 2.5s ease-in-out infinite;
+         -moz-animation: bounce 2.5s ease-in-out infinite;
+              animation: bounce 2.5s ease-in-out infinite;
     }
 }
+  
+  @-moz-keyframes bounce {
+    0%, 50%, 100% { -moz-transform: translateY(0); }
+    25% { -moz-transform: translateY(-15px); }
+    75% { -moz-transform: translateY(-15px); }
+  }
+  
+  @-webkit-keyframes bounce {
+    0%, 50%, 100% { -webkit-transform: translateY(0); }
+    25% { -webkit-transform: translateY(-15px); }
+    75% { -webkit-transform: translateY(-15px); }
+  }
+  
+  @keyframes bounce {
+    0%, 50%, 100% {transform: translateY(0); }
+    25% { transform: translateY(-15px); }
+    75% { transform: translateY(-15px); }
+  }
+  
 
 .button {
     background-color: var(--action-button-color-one);
