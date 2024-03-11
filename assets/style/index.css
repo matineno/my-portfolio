@@ -188,8 +188,12 @@ section, section {
 
 .content-section {
     color: var(--font-color-two);
-    p {
+    p{
+        text-align: left;
         margin: 15px 0px;
+    }
+    h4{
+        margin-bottom: 1px;
     }
 }
 
@@ -220,6 +224,7 @@ section, section {
         text-decoration: none;
     }
     p {
+        text-align: center;
         color: var(--font-color-one);
         margin-top: 10px;
         -webkit-text-stroke-width: 0.5px;
