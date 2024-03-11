@@ -156,6 +156,7 @@ nav {
 
 .text-container {
     width: calc(50%);
+    text-align: center;
 }
 
 section .link a {
@@ -384,6 +385,7 @@ footer p {
 @media (max-width:800px){
     .text-container {
         width: calc(100%);
+        text-align: center;
     }
 
     input {
