@@ -149,13 +149,24 @@ nav {
     div h1,h2,p{
         text-align: center;
     }
+    h1 {
+        font-size: 30px;
+    }
 }
 
-.link a {
+.text-container {
+    width: calc(50%);
+}
+
+section .link a {
     color: var(--font-color-one);
     text-decoration: none;
     cursor: pointer;
     transition: color 0.25s ease-in-out;
+
+    i{
+        font-size: 20px;
+    }
   
     &:hover {
       text-decoration: none;
@@ -276,7 +287,7 @@ article {
 
 
 input {
-  width: calc(100%);
+  width: calc(50%);
   margin-top: 15px;
   border: 1px solid rgb(234, 232, 232);
   border-radius: 5px;
@@ -304,10 +315,10 @@ input[type=submit]{
 
 .message {
   height: 150px;
+  width: calc(50%);
   border-radius: 5px;
   overflow: auto;
   line-height: 18px;
-  width: calc(100%);
   margin-top: 15px;
   border: 1px solid rgb(234, 232, 232);
   padding: 10px 20px;
@@ -370,6 +381,17 @@ footer p {
 }
 
 
+@media (max-width:800px){
+    .text-container {
+        width: calc(100%);
+    }
 
-
-
+    input {
+        width: calc(100%);
+        
+    }
+    .message {
+        width: calc(100%);
+      }
+}
+  
