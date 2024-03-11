@@ -197,6 +197,13 @@ section, section {
     }
 }
 
+.form-section {
+    color: var(--font-color-two);
+    p{
+        margin: 15px 0px;
+    }
+}
+
 .profile-image-container {
     width: 100%;
     height: 150px;
