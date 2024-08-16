@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" dir ="ltr">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width initial-scale=1.0">
-      <meta name ="author" content = "Martins Adogamhe">
-      <meta name = "description" content = "Martins Adogamhe's Personal Portfolio">
-      <meta name = "kewywords" content ="about me, contant info, socials">
-      <title>My Personal Portfolio</title>
-      <link rel="stylesheet" href="assets/style/index.css">
-      <link rel="icon" type="image/x-icon" href="./assets/media/favicon.png">
-      <script src="https://kit.fontawesome.com/f63793188b.js" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-  </head>
-  <body>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Martins Adogamhe">
+    <meta name="description" content="Martins Adogamhe's Personal Portfolio">
+    <meta name="keywords" content="about me, contact info, socials">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="assets/style/index.css">
+    <link rel="icon" type="image/x-icon" href="./assets/media/favicon.png">
+    <script src="https://kit.fontawesome.com/f63793188b.js" crossorigin="anonymous"></script>
+    <script src="./assets/script/index.js" defer></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("2zpEl4E0Ob8rfM0pP"); // Replace with your EmailJS user ID
+        })();
+    </script>
+</head>
+<body>
     <header>
         <div class="container flex space-between">
             <div class="flex">
                 <div class="logo-container">
                     <a href="index.html"><div class="logo"></div></a>
                 </div>
-        </div>
-        <nav class="gap-10 flex space-around">
-                <div><a href="#about-me">About me</a></div>
-                <div><a href="https://github.com/matineno?tab=repositories">Projects</a></div>
-                <div><a href="#contact">Contact</a></div>
-        </nav>
-        <!-- <div class="menu-icon"></div> -->
+            </div>
+            <nav class="gap-10 flex space-around">
+                <a href="#about-me">About me</a>
+                <a href="https://github.com/matineno?tab=repositories">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
     </header>
+
     <main>
         <section class="secondary-hero-container">
             <div class="secondary-hero-image">
                 <div class="secondary-hero-text">
                     <h1>Designer & Web Developer</h1>
                     <div class="text-container">
-                        <p>I'm dedicated to creating websites that are both 
-                            beautiful and responsive, ensuring a flawless experience 
-                            on any device. 
-                        </p>
+                        <p>I'm dedicated to creating websites that are both beautiful and responsive, ensuring a flawless experience on any device.</p>
                     </div>
                     <div class="link flex gap-50">
                         <a href="https://www.facebook.com/martinsadoss2/"><i class="fa-brands fa-facebook"></i></a>
@@ -53,104 +55,67 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class ="container">
+
+        <section class="about-me">
+            <div class="container">
                 <div class="content-section center align-items-center">
                     <h2 id="about-me">ABOUT ME</h2>
                     <div class="profile-image-container">
                         <div class="profile-image"></div>
                     </div>
                     <h3>I'm Martins Adogamhe</h3>
-                    <p>Deeply passionate about crafting websites that not only dazzle 
-                        with elegance and beauty but also seamlessly adapt to any screen size. 
-                        Every detail is meticulously considered to ensure a flawless experience 
-                        for every visitor. Explore the artistry behind each webpage and discover 
-                        the care put into every design.
-                    </p>
+                    <p>Deeply passionate about crafting websites that not only dazzle with elegance and beauty but also seamlessly adapt to any screen size. Every detail is meticulously considered to ensure a flawless experience for every visitor. Explore the artistry behind each webpage and discover the care put into every design.</p>
                     <h4>Get to know me</h4>
-                    <p>
-                        Since my high school years, I've been deeply passionate about the latest 
-                        technological developments. Following high school, I interned for a year 
-                        at a media studio in Nigeria, where I honed my skills in video and movie 
-                        editing using Adobe Premiere Pro and Adobe After Effects. This experience 
-                        significantly heightened my interest in the creative and development realms.
-                    </p>
-                    <p>
-                        In 2016, I pursued a two-year diploma in computer engineering, which I completed 
-                        in 2018. Following this, I enrolled in the IBM Digital Nation for Africa program, 
-                        aimed at educating African students about emerging technologies. During this program, 
-                        I developed a keen interest in programming, particularly with Python, and gained 
-                        proficiency in the basics of web development.
-                    </p>
-                    <p>
-                        After completing my training, I joined Gleaming Stars Schools, a British-based 
-                        institution, as an IT consultant and teacher. There, I furthered my workplace skills 
-                        and contributed to teaching children programming using Scratch Desktop. I remained with 
-                        the school until 2020 when I had to cease working due to the COVID-19 pandemic.
-                    </p>
-                    <p>
-                        During this period, my interest in design flourished, and I began working as a freelance 
-                        graphics designer. I collaborated with small companies, enhancing my skills while also 
-                        undertaking online web development courses on platforms like Udemy and Coursera to broaden 
-                        my programming expertise.
-                    </p>
-                    <p>
-                        Determined to advance my skills and transition my hobbies into a profession, I decided to 
-                        pursue studies in Canada. I applied to the Software Development program at the Manitoba
-                        Institute of Trades and Technology and have since been pursuing my career as a web developer 
-                        in Canada.
-                    </p>
-                    <div class="flex center gap-10 ">
+                    <p>Since my high school years, I've been deeply passionate about the latest technological developments. Following high school, I interned for a year at a media studio in Nigeria, where I honed my skills in video and movie editing using Adobe Premiere Pro and Adobe After Effects. This experience significantly heightened my interest in the creative and development realms.</p>
+                    <p>In 2016, I pursued a two-year diploma in computer engineering, which I completed in 2018. Following this, I enrolled in the IBM Digital Nation for Africa program, aimed at educating African students about emerging technologies. During this program, I developed a keen interest in programming, particularly with Python, and gained proficiency in the basics of web development.</p>
+                    <p>After completing my training, I joined Gleaming Stars Schools, a British-based institution, as an IT consultant and teacher. There, I furthered my workplace skills and contributed to teaching children programming using Scratch Desktop. I remained with the school until 2020 when I had to cease working due to the COVID-19 pandemic.</p>
+                    <p>During this period, my interest in design flourished, and I began working as a freelance graphics designer. I collaborated with small companies, enhancing my skills while also undertaking online web development courses on platforms like Udemy and Coursera to broaden my programming expertise.</p>
+                    <p>Determined to advance my skills and transition my hobbies into a profession, I decided to pursue studies in Canada. I applied to the Software Development program at the Manitoba Institute of Trades and Technology and have since been pursuing my career as a web developer in Canada.</p>
+                    <div class="flex center gap-10">
                         <div class="section-button">
                             <a href="mailto:martinsadogamhe9@gmail.com"><p>HIRE ME</p></a>
                         </div>
                         <div class="section-button">
-                            <a href=""><p>DOWNLOAD CV</p></a>
+                            <a href="#"><p>DOWNLOAD CV</p></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section>
-            <div class ="container">
+
+        <section class="contact">
+            <div class="container">
                 <div class="form-section center align-items-center">
                     <h2 id="contact">GET IN TOUCH</h2>
                     <p>Your message here and I will reach out to you ASAP</p>
-                    <div class="content container gap-10">
-                        <form 
-                            action="https://formspree.io/f/xldrlnkr"
-                            method="POST"
-                        >
-                        <div>
-                            <input type="text" name="name" placeholder="your name" required>
-                            <input type="tel" name="tel" placeholder="+1 204 123 4567" pattern="+[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{4}"required>
+                    <form id="contact-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Your name" required>
+                            <input type="tel" name="tel" placeholder="+1 204 123 4567" pattern="\+[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{4}" required>
                             <input type="email" name="email" placeholder="email@example.com">
-                            <input type="text" name="subject" placeholder="your subject">
-                            <textarea class="message" name="message">your message</textarea>
+                            <input type="text" name="subject" placeholder="Your subject">
+                            <textarea class="message" name="message" placeholder="Your message"></textarea>
                         </div>
                         <input type="submit" value="SUBMIT">
-                        </form>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="container flex space-between">
             <div class="link flex gap-10">
                 <a href="https://www.facebook.com/martinsadoss2/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com/matineno_21"><i class="fa-brands fa-x-twitter"></i>
+                <a href="https://twitter.com/matineno_21"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="mailto:martinsadogamhe9@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                 <a href="https://www.instagram.com/matineno21/"><i class="fa-brands fa-square-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/martinsadogamhe/"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
             <div>
-                <p>
-                  <a href="mailto:martinsadogamhe9@gmail.com">&copy;2024 Martins Adogamhe</a>
-                </p>
+                <p><a href="mailto:martinsadogamhe9@gmail.com">&copy; 2024 Martins Adogamhe</a></p>
             </div>
         </div>
     </footer>
-  </body>
+</body>
 </html>
