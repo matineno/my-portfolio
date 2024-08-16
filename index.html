@@ -10,6 +10,8 @@
       <link rel="stylesheet" href="assets/style/index.css">
       <link rel="icon" type="image/x-icon" href="./assets/media/favicon.png">
       <script src="https://kit.fontawesome.com/f63793188b.js" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
   </head>
   <body>
     <header>
@@ -21,7 +23,7 @@
         </div>
         <nav class="gap-10 flex space-around">
                 <div><a href="#about-me">About me</a></div>
-                <div><a href="#">Projects</a></div>
+                <div><a href="https://github.com/matineno?tab=repositories">Projects</a></div>
                 <div><a href="#contact">Contact</a></div>
         </nav>
         <!-- <div class="menu-icon"></div> -->
@@ -116,7 +118,10 @@
                     <h2 id="contact">GET IN TOUCH</h2>
                     <p>Your message here and I will reach out to you ASAP</p>
                     <div class="content container gap-10">
-                        <form>
+                        <form 
+                            action="https://formspree.io/f/xldrlnkr"
+                            method="POST"
+                        >
                         <div>
                             <input type="text" name="name" placeholder="your name" required>
                             <input type="tel" name="tel" placeholder="+1 204 123 4567" pattern="+[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{4}"required>
